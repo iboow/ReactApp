@@ -1,0 +1,18 @@
+@import 'variables.scss';
+
+
+
+@mixin font($weight, $family, $line-height, $font-style) {
+    font-weight: $weight;
+    font-family: $family;
+    line-height: $line-height;
+    font-style: $font-style;
+  }
+
+  @mixin position($value, $left: 0, $top: 0, $right: 0, $bottom: 0) {
+    position: $value;
+    left: $left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+  }

@@ -1,0 +1,28 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+h1,
+h2,
+h3,
+h4 {
+    @include font(500, $font-stack, 142.6%, normal);
+}
+
+p {
+    @include font(500, $font-stack, 142.6%, normal);
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    display: flex;
+    @include font(500, "Montserrat", 142.6%, normal);
+    font-size: 24px;
+    height: 34px;
+    color: $primary-color;
+    text-decoration: none;
+}
+

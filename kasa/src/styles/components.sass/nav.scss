@@ -1,0 +1,31 @@
+@import "../style.sass/variables.scss";
+@import "../style.sass/base.scss";
+@import "../style.sass/mixins.scss";
+
+nav {
+    @include position(absolute, 75.08%, 25%, 0, 25%);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 309px;
+    height: 34px;
+
+    ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.home a {
+    width: 136px;
+}
+
+.about a {
+    justify-content: right;
+    width: 116px;
+}
+
+.active {
+    text-decoration: underline;
+}

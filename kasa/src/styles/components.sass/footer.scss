@@ -1,0 +1,30 @@
+@import "../style.sass/variables.scss";
+@import "../style.sass/base.scss";
+@import "../style.sass/mixins.scss";
+
+footer {
+    position: relative;
+    width: 1440px;
+    height: 209px;
+    top: 4333px;
+    margin: 0;
+    background: $background-footer;
+}
+
+.logo-footer {
+    @include position(absolute, 45.76%, 31.58%, 45.75%, 49.55%);
+}
+
+.rights-text {
+    @include position(absolute, 32.15%, 64.11%, 32.22%, 13.88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 513px;
+    height: 46px;
+
+    p {
+        color: $secondary-color;
+        font-size: 24px;
+    }
+}

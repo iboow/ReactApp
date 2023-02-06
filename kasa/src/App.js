@@ -1,17 +1,17 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./pages/About/about";
-import Home from "./pages/Home/home";
-import Error from "./pages/Error/error";
-import Accomodation from "./pages/Accomodation/accomodation";
+import About from "./pages/about";
+import Home from "./pages/home";
+import NotFound from "./pages/error";
+import Accomodation from "./pages/accomodation";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/error" element={<Error />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/accomodation" element={<Accomodation />} />
       </Routes>
     </BrowserRouter>
