@@ -7,7 +7,7 @@ function NotFound() {
     <div>
       <Header />
       <div className="notfound">
-        <p>404</p>
+        <h1>404</h1>
       </div>
       <Footer />
     </div>

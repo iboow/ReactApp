@@ -1,0 +1,31 @@
+@import "../style.sass/variables.scss";
+@import "../style.sass/base.scss";
+@import "../style.sass/mixins.scss";
+
+.banner_container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 1240px;
+    height: 223px;
+    left: 100px;
+    top: 171px;
+    color: $secondary-color;
+    border-radius: 25px;
+    overflow: hidden;
+
+    img {
+        filter: brightness(80%);
+    }
+
+    p {
+        position: absolute;
+        font-size: 48px;
+        width: 705px;
+        height: 68px;
+        text-align: center;
+        color: $secondary-color;
+    }
+}

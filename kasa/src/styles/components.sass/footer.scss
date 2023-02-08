@@ -3,10 +3,11 @@
 @import "../style.sass/mixins.scss";
 
 footer {
-    position: relative;
+    position: absolute;
     width: 1440px;
     height: 209px;
-    top: 4333px;
+    left: 0;
+    bottom: 0;
     margin: 0;
     background: $background-footer;
 }
