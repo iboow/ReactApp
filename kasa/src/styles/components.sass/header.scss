@@ -2,18 +2,13 @@
 @import "../style.sass/base.scss";
 
 header {
-    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 1240px;
     height: 68px;
-    left: 100px;
-    top: 40px;
+    margin: auto;
     
 }
 
-.logo-header {
-    position: absolute;
-    left: 0%;
-    right: 83.04%;
-    top: 0%;
-    bottom: 0%;
-}
+

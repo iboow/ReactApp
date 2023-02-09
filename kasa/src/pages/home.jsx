@@ -1,24 +1,19 @@
+import React from "react";
+import '../styles/pages.sass/home.scss'
 import Header from "../Components/header";
 import Footer from "../Components/footer";
 import Banner from "../Components/banner";
-import accomodationList from "../accomodationList";
+import CardList from "../Components/cardList.scss";
+import "../styles/components.sass/card.scss";
 
 function Home() {
   return (
-    <>
+    <div className="home">
       <Header />
-
-      <main>
-        <Banner />
-        {accomodationList.map((accomodation) => (
-    <li key={ accomodation.id }>
-      
-    </li>
-))}
-      </main>
-
+      <Banner />
+      <CardList/>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -3,7 +3,7 @@
 @import "../style.sass/mixins.scss";
 
 nav {
-    @include position(absolute, 75.08%, 25%, 0, 25%);
+   
     display: flex;
     align-items: center;
     justify-content: right;

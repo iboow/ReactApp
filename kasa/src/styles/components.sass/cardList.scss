@@ -1,0 +1,15 @@
+
+
+.card-container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    width: 1240px;
+    border-radius: 25px;
+    background: #f7f7f7;
+    padding: 30px;
+    margin: auto;
+}

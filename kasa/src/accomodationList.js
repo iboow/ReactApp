@@ -1,4 +1,4 @@
- const accomodationList = [
+ export const accomodationList = [
 	{
 		"id": "c67ab8a7", 
 		"title": "Appartement cosy",
@@ -618,4 +618,3 @@
 	}
 ]
 
-export default accomodationList;
