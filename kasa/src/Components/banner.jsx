@@ -19,7 +19,7 @@ function Banner() {
   }, []);
 
   return (
-    <section>
+    <section className="section">
       <div className="banner_container">
         <img src={location === "home" ? home : about} alt={alt} />
         {location === "home" && <p>Chez vous, partout et ailleurs</p>}

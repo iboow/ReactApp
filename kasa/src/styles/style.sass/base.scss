@@ -7,7 +7,10 @@
     box-sizing: border-box;
 }
 
-
+.section{
+    margin-top: 25px;
+    margin-bottom: 25px
+}
 
 p {
     @include font(500, $font-stack, 142.6%, normal);
