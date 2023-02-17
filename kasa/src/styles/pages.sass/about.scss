@@ -1,22 +1,2 @@
 @import "../style.sass/variables.scss";
 
-.collapse {
-    margin: auto;
-    height: fit-content;
-    width: 1023px;
-}
-
-.content {
-    width: 1023px;
-    height: fit-content;
-    background: #f7f7f7;
-    margin-bottom: 30px;
-    border-radius: 5px;
-
-    p {
-        font-size: 24px;
-        color: $primary-color;
-        padding: 30px;
-        font-weight: 400;
-    }
-}

@@ -2,9 +2,9 @@ import Header from "../Components/header";
 import Footer from "../Components/footer";
 import Banner from "../Components/banner";
 import Collapse from "../Components/collapse";
-import "../styles/pages.sass/about.scss";
 
-function About(props) {
+
+function About() {
   return (
     <div>
       <Header />

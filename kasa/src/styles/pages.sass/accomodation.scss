@@ -1,0 +1,63 @@
+@import "../style.sass/variables.scss";
+
+.title {
+    margin: auto;
+    width: 1240px;
+    height: auto;
+
+    h1,
+    p {
+        color: $primary-color;
+    }
+}
+
+
+.container-tags {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 1240px;
+    height: auto;
+    
+}
+
+.tag{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 25px;
+    border-radius: 10px;
+    background-color: $primary-color;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    p{
+        font-size: 14px;
+        color: $secondary-color;
+       
+    }
+   
+}
+
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 1240px;
+    height: auto;
+    margin: auto;
+}
+
+.container-collapse{
+    display: flex;
+    gap: 100px;
+    width: auto;
+}
+
+.container-description,.container-equipment{
+    display: flex;
+    flex-direction: column;
+    width: 615px
+}
+
+

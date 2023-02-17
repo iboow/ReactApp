@@ -1,0 +1,41 @@
+.container-carrousel {
+    margin: auto;
+    width: 1240px;
+    height: 415px;
+
+    img {
+        width: 1240px;
+        height: 415px;
+        object-fit: cover;
+        border-radius: 15px;
+        
+    }
+}
+
+.arrow {
+    width: 49px;
+    height: 79px;
+    position: absolute;
+    z-index: 10;
+    border: none;
+    cursor: pointer;
+}
+
+.next {
+    background: url("../../assets/next-arrow.png") center center no-repeat;
+    right: 200px;
+    top: 254px;
+}
+
+.prev {
+    background: url("../../assets/prev-arrow.png") center center no-repeat;
+    left: 200px;
+    top: 254px;
+}
+
+.numberOfPictures{
+    position: absolute;
+    font-size: 24px;
+    top: 450px;
+    left: 50%;
+}

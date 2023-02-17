@@ -1,3 +1,4 @@
+
 @import "variables.scss";
 @import "mixins.scss";
 
@@ -8,12 +9,15 @@
 }
 
 .section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     margin-top: 25px;
     margin-bottom: 25px
 }
 
 p {
-    @include font(500, $font-stack, 142.6%, normal);
+    @include font(500, 142.6%, normal);
     margin: 0;
 }
 
@@ -23,7 +27,7 @@ li {
 
 a {
     display: flex;
-    @include font(500, "Montserrat", 142.6%, normal);
+    @include font(500, 142.6%, normal);
     font-size: 24px;
     height: 34px;
     color: $primary-color;

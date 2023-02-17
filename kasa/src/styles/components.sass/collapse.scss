@@ -6,7 +6,7 @@
     align-items: center;
     padding: 20px;
     background-color: $primary-color;
-    width: 1024px;
+    width: auto;
     height: 47px;
     border-radius: 5px;
 
@@ -32,4 +32,27 @@
 
 h3 {
     color: $secondary-color;
+}
+
+.collapse {
+    margin: auto;
+    height: fit-content;
+    width: 1023px;
+}
+
+.content {
+    width: auto;
+    height: fit-content;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    padding: 30px;
+
+    p {
+        font-size: 24px;
+        color: $primary-color;
+        font-weight: 400;
+    }
+
+   
 }

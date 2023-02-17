@@ -2,9 +2,8 @@
 
 
 
-@mixin font($weight, $family, $line-height, $font-style) {
+@mixin font($weight, $line-height, $font-style) {
     font-weight: $weight;
-    font-family: $family;
     line-height: $line-height;
     font-style: $font-style;
   }
