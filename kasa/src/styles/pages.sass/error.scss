@@ -3,15 +3,29 @@
 @import "../style.sass/mixins.scss";
 
 .notfound {
-    position: absolute;
-    width: 597px;
-    height: 263px;
-    left: 432px;
-    top: 277px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: $primary-color;
+        font-size: 36px;
+    }
 
     h1 {
         @include font(700, 410.69px, normal);
         font-size: 288px;
         color: $primary-color;
     }
+}
+
+.backToHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-decoration: underline;
 }
