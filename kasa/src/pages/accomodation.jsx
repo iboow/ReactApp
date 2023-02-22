@@ -26,38 +26,66 @@ function Accomodation() {
         </section>
         <section className="section">
           <div className="main-info">
+            
+            
+            <div className="left">
+
             <div className="title">
               <h1>{accomodation.title}</h1>
               <p>{accomodation.location}</p>
             </div>
-            <div className="host">
-              <span>{accomodation.host.name}</span>
-              <img src={accomodation.host.picture} alt="host" />
-            </div>
-          </div>
-          <div className="info">
-            <div className="tag-rating">
-              <div className="container-tags">
+
+
+            <div className="container-tags">
                 {accomodation.tags.map((tag) => (
                   <div className="tag">
                     <p>{tag}</p>
                   </div>
                 ))}
               </div>
-              <div className="container-rating">
+
+              </div>
+
+
+              <div className="right">
+
+            <div className="container-host">
+              <span>{accomodation.host.name}</span>
+              <img src={accomodation.host.picture} alt="host" />
+            </div>
+
+            <div className="container-rating">
                 <StarRating rating={accomodation.rating} />
               </div>
+
+              </div>
+            
+             
+
+
+              
+
             </div>
+
+
+
+
+
+
+
             <div className="container-collapse">
+
               <div className="container-description">
-                <Collapse labels="Description">
+                <Collapse labels="Description" page="accomodation">
                   <div className="content">
                     <p>{accomodation.description}</p>
                   </div>
                 </Collapse>
               </div>
+
+
               <div className="container-equipment">
-                <Collapse labels="Equipement">
+                <Collapse labels="Equipement" page="accomodation">
                   <div className="content">
                     {accomodation.equipments.map((item) => (
                       <li>{item}</li>
@@ -65,8 +93,11 @@ function Accomodation() {
                   </div>
                 </Collapse>
               </div>
+
+
+
             </div>
-          </div>
+          
         </section>
         <Footer />
       </main>

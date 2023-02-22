@@ -2,7 +2,7 @@ import Header from "../Components/header";
 import Footer from "../Components/footer";
 import Banner from "../Components/banner";
 import Collapse from "../Components/collapse";
-
+import '../styles/pages.sass/about.scss';
 
 function About() {
   return (
@@ -12,7 +12,7 @@ function About() {
         <Banner />
         <section className="section">
         <div className="collapse">
-          <Collapse labels="Fiabilité">
+          <Collapse labels="Fiabilité" page="about">
             <div className="content">
             <p>
               Les annonces postées sur Kasa garantissent une fiabilité totale.
@@ -21,7 +21,7 @@ function About() {
             </p>
             </div>
           </Collapse>
-          <Collapse labels="Respect">
+          <Collapse labels="Respect"  page="about">
           <div className="content">
             <p>
               La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
@@ -30,7 +30,7 @@ function About() {
             </p>
             </div>
           </Collapse>
-          <Collapse labels="Service">
+          <Collapse labels="Service"  page="about">
           <div className="content">
             <p>
               Nos équipes se tiennent à votre disposition pour vous fournir une
@@ -39,7 +39,7 @@ function About() {
             </p>
             </div>
           </Collapse>
-          <Collapse labels="Sécurité">
+          <Collapse labels="Sécurité"  page="about">
           <div className="content">
             <p>
               La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que

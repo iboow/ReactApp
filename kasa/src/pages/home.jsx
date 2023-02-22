@@ -14,7 +14,8 @@ function Home() {
       <Banner />
       <CardList/>
       </main>
-      <Footer />
+      <Footer/>
+      
     </>
   );
 }

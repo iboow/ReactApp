@@ -8,7 +8,7 @@ function Card({ item }) {
     <Link to={`/accomodation/${item.id}`}
      className="thumb">
       <img src={item.cover} alt={item.title} />
-      <h6>{item.title}</h6>
+      <p>{item.title}</p>
     </Link>
   );
 }

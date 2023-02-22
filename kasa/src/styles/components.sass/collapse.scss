@@ -37,7 +37,8 @@ h3 {
 .collapse {
     margin: auto;
     height: fit-content;
-    width: 1023px;
+    max-width: 1023px;
+    width: 100%;
 }
 
 .content {
@@ -46,13 +47,53 @@ h3 {
     background: #f7f7f7;
     margin-bottom: 30px;
     border-radius: 5px;
-    padding: 30px;
+    padding: 15px;
 
     p {
-        font-size: 18px;
         color: $primary-color;
         font-weight: 400;
     }
+}
 
+.about-collapse-content p {
+    font-size: 24px;
+}
+
+.accomodation-collapse-content p {
+    font-size: 18px;
+}
+
+.about-collapse-title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.accomodation-collapse-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 851px) {
    
+   .container-title{
+    height: 30px;
+   }
+
+   .button {
+    width: 15px;
+   }
+
+   .content{
+    padding: 10px;
+    margin-bottom: 15px;
+   }
+   
+    .about-collapse-title {
+        font-size: 13px;
+        
+    }
+
+    .about-collapse-content p {
+        font-size: 12px;
+    }
 }

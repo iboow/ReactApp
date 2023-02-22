@@ -5,10 +5,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
+    max-width: 1240px;
     height: 68px;
-    margin: auto;
-    
+    margin:auto;
+   
 }
+
+.logo-header{
+    max-width: 210px;
+    
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+  
+
+
+
 
 

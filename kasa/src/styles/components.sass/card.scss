@@ -3,8 +3,9 @@
 
 .thumb {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 335px;
+    max-height: 300px;
+    min-height: 255px;
     
 
     img {
@@ -15,7 +16,7 @@
         filter: brightness(80%); 
     }
 
-    h6 {
+    p {
         position: absolute;
         display: flex;
         align-items: center;
@@ -25,5 +26,14 @@
         width: 300px;
         height: 52px;
         color: $secondary-color;
+        font-size: 18px;
+        font-weight: 500;
     }
 }
+
+
+@media screen and (max-width: 851px) {
+   .thumb{
+    width: 100%;
+   }
+  }

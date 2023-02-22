@@ -28,8 +28,17 @@ li {
 a {
     display: flex;
     @include font(500, 142.6%, normal);
-    font-size: 24px;
     height: 34px;
     color: $primary-color;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 851px) {
+
+    .section{
+        margin-top: 5px;
+    }
+
+
 }
