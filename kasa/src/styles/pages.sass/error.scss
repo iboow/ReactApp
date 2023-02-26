@@ -2,30 +2,55 @@
 @import "../style.sass/base.scss";
 @import "../style.sass/mixins.scss";
 
-.notfound {
+.section-error {
+    margin-top: 100px;
+}
+
+.container-error {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    p {
-        color: $primary-color;
-        font-size: 36px;
-    }
-
-    h1 {
-        @include font(700, 410.69px, normal);
-        font-size: 288px;
-        color: $primary-color;
-    }
+    margin: auto;
+    max-width: 1240px;
+    height: 800px;
+    gap: 20px;
 }
 
-.backToHome{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    margin-top: 200px;
-    margin-bottom: 100px;
+.errorNumber h1 {
+    font-size: 288px;
+}
+
+.notfound p {
+    color: $primary-color;
+    font-size: $x-large-font-size;
+    text-align: center;
+}
+
+.backToHome {
+    margin-top: 150px;
+    font-size: $medium-font-size;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 851px) {
+    .section-error {
+        margin-top: 50px;
+    }
+
+    .container-error {
+        height: 400px;
+    }
+    .errorNumber h1 {
+        font-size: 96px;
+    }
+
+    .notfound p {
+        color: $primary-color;
+        font-size: $medium-font-size;
+    }
+
+    .backToHome {
+        margin-top: 100px;
+        font-size: $small-font-size;
+    }
 }

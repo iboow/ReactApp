@@ -4,7 +4,8 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 1240px;
+    max-width: 1240px;
+    width: 100%;
     height: auto;
 }
 
@@ -25,7 +26,7 @@
     padding-right: 20px;
 
     p {
-        font-size: 14px;
+        font-size: $small-font-size;
         color: $secondary-color;
     }
 }
@@ -34,6 +35,7 @@
     display: flex;
     gap: 100px;
     max-width: 1240px;
+    width: 100%;
     margin: auto;
 }
 
@@ -41,7 +43,7 @@
 .container-equipment {
     display: flex;
     flex-direction: column;
-    width: 582px;
+    width: 100%;
 }
 
 .right,
@@ -60,6 +62,7 @@
 
     span {
         width: min-content;
+        color: $primary-color;
     }
 
     img {
@@ -71,7 +74,7 @@
 }
 
 li {
-    font-size: 18px;
+    font-size: $medium-font-size;
     font-weight: 400;
     line-height: 25.67px;
     color: $primary-color;
@@ -80,4 +83,65 @@ li {
 .title p,
 h1 {
     color: $primary-color;
+}
+
+@media screen and (max-width: 851px) {
+    .main-info,
+    .container-collapse {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .main-info {
+        gap: 25px;
+    }
+
+    .right {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container-tags {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tag {
+        min-height: 18px;
+        border-radius: 5px;
+
+        p {
+            font-size:$xx-small-font-size;
+        }
+    }
+    li,
+    span {
+        font-size: $x-small-font-size;
+    }
+
+    .container-host img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .container-rating {
+        width: 98px;
+        height: 18px;
+
+        img {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .title {
+        h1 {
+            font-size: $medium-font-size;
+        }
+
+        p {
+            font-size: $small-font-size;
+        }
+    }
 }

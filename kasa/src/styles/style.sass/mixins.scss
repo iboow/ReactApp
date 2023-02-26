@@ -8,10 +8,4 @@
     font-style: $font-style;
   }
 
-  @mixin position($value, $left: 0, $top: 0, $right: 0, $bottom: 0) {
-    position: $value;
-    left: $left;
-    top: $top;
-    right: $right;
-    bottom: $bottom;
-  }
+  

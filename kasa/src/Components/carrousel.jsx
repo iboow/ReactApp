@@ -22,18 +22,18 @@ function Carrousel(props) {
   }
 
   return (
-    <div>
+    
+      <div className='container-carrousel'>
+      <img src={images[currentImageIndex]} alt={` ${currentImageIndex}`} />
       {numImages > 1 && (
         <div>
           <button className='arrow prev' onClick={handlePrevious}></button>
           <button className='arrow next' onClick={handleNext}></button>
         </div>
       )}
-      <div className='container-carrousel'>
-      <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex}`} />
       <p className='numberOfPictures'>{`${currentImageIndex+1}/${numImages}`}</p>
       </div>
-    </div>
+    
   );
 }
 

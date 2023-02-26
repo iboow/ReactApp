@@ -1,4 +1,5 @@
 import Header from "../Components/header";
+import React from "react";
 import Footer from "../Components/footer";
 import Carrousel from "../Components/carrousel";
 import { accomodationList } from "../accomodationList";
@@ -37,8 +38,8 @@ function Accomodation() {
 
 
             <div className="container-tags">
-                {accomodation.tags.map((tag) => (
-                  <div className="tag">
+                {accomodation.tags.map((tag,index) => (
+                  <div key={index} className="tag">
                     <p>{tag}</p>
                   </div>
                 ))}
@@ -87,8 +88,8 @@ function Accomodation() {
               <div className="container-equipment">
                 <Collapse labels="Equipement" page="accomodation">
                   <div className="content">
-                    {accomodation.equipments.map((item) => (
-                      <li>{item}</li>
+                    {accomodation.equipments.map((item,index) => (
+                    <li key={index}>{item}</li>
                     ))}
                   </div>
                 </Collapse>
