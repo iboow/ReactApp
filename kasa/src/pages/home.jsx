@@ -11,7 +11,7 @@ function Home() {
     <>
       <Header />
       <main>
-      <Banner />
+      <Banner alt="image de montagne proche de la mer"/>
       <CardList/>
       </main>
       <Footer/>

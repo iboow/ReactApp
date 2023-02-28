@@ -17,7 +17,7 @@ const Collapse = (props) => {
         </button>
         </div>
         {isOpen && <div className={`content ${page === 'about' ? 'about-collapse-content' : 'accomodation-collapse-content'}`}>
-        {props.children}
+        {props.content}
 </div>}
      </>
     );

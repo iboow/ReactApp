@@ -1,5 +1,5 @@
 import React from "react";
-import {accomodationList} from "../accomodationList";
+import accomodationList from '../data/accomodationList.json'
 import Card from "../Components/card";
 import '../styles/components.sass/cardList.scss'
 

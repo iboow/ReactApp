@@ -2,7 +2,7 @@ import Header from "../Components/header";
 import React from "react";
 import Footer from "../Components/footer";
 import Carrousel from "../Components/carrousel";
-import { accomodationList } from "../accomodationList";
+import accomodationList from '../data/accomodationList.json'
 import { useParams } from "react-router-dom";
 import "../styles/pages.sass/accomodation.scss";
 import Collapse from "../Components/collapse";
@@ -13,6 +13,9 @@ function Accomodation() {
   const { id } = useParams();
   const accomodation = accomodationList.find((object) => object.id === id);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const equipmentList = accomodation.equipments.map((item, index) => (
+    <li key={index}>{item}</li>
+  ));
 
   return (
     <>
@@ -27,78 +30,44 @@ function Accomodation() {
         </section>
         <section className="section">
           <div className="main-info">
-            
-            
             <div className="left">
+              <div className="title">
+                <h1>{accomodation.title}</h1>
+                <p>{accomodation.location}</p>
+              </div>
 
-            <div className="title">
-              <h1>{accomodation.title}</h1>
-              <p>{accomodation.location}</p>
-            </div>
-
-
-            <div className="container-tags">
-                {accomodation.tags.map((tag,index) => (
+              <div className="container-tags">
+                {accomodation.tags.map((tag, index) => (
                   <div key={index} className="tag">
                     <p>{tag}</p>
                   </div>
                 ))}
               </div>
-
-              </div>
-
-
-              <div className="right">
-
-            <div className="container-host">
-              <span>{accomodation.host.name}</span>
-              <img src={accomodation.host.picture} alt="host" />
             </div>
 
-            <div className="container-rating">
+            <div className="right">
+              <div className="container-host">
+                <span>{accomodation.host.name}</span>
+                <img src={accomodation.host.picture} alt="host" />
+              </div>
+
+              <div className="container-rating">
                 <StarRating rating={accomodation.rating} />
               </div>
+            </div>
+          </div>
 
-              </div>
-            
-             
-
-
-              
-
+          <div className="container-collapse">
+            <div className="container-description">
+              <Collapse labels="Description" content={accomodation.description} page="accomodation">
+              </Collapse>
             </div>
 
-
-
-
-
-
-
-            <div className="container-collapse">
-
-              <div className="container-description">
-                <Collapse labels="Description" page="accomodation">
-                  <div className="content">
-                    <p>{accomodation.description}</p>
-                  </div>
-                </Collapse>
-              </div>
-
-
-              <div className="container-equipment">
-                <Collapse labels="Equipement" page="accomodation">
-                  <div className="content">
-                    {accomodation.equipments.map((item,index) => (
-                    <li key={index}>{item}</li>
-                    ))}
-                  </div>
-                </Collapse>
-              </div>
-
-
-
+            <div className="container-equipment">
+              <Collapse labels="Equipement" content={equipmentList} page="accomodation">
+              </Collapse>
             </div>
-          
+          </div>
         </section>
         <Footer />
       </main>

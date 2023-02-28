@@ -2,56 +2,22 @@ import Header from "../Components/header";
 import Footer from "../Components/footer";
 import Banner from "../Components/banner";
 import Collapse from "../Components/collapse";
-import '../styles/pages.sass/about.scss';
+import "../styles/pages.sass/about.scss";
+import data from "../data/data.json";
 
 function About() {
   return (
     <div>
       <Header />
       <main>
-        <Banner />
+        <Banner alt="image de haute montagne" />
         <section className="section">
-        <div className="collapse">
-          <Collapse labels="Fiabilité" page="about">
-            <div className="content">
-            <p>
-              Les annonces postées sur Kasa garantissent une fiabilité totale.
-              Les photos sont conformes aux logements, et toutes les
-              informations sont régulièrement vérifiées par nos équipes.
-            </p>
-            </div>
-          </Collapse>
-          <Collapse labels="Respect"  page="about">
-          <div className="content">
-            <p>
-              La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
-              comportement discriminatoire ou de perturbation du voisinage
-              entraînera une exclusion de notre plateforme.
-            </p>
-            </div>
-          </Collapse>
-          <Collapse labels="Service"  page="about">
-          <div className="content">
-            <p>
-              Nos équipes se tiennent à votre disposition pour vous fournir une
-              expérience parfaite. N'hésitez pas à nous contacter si vous avez
-              la moindre question.
-            </p>
-            </div>
-          </Collapse>
-          <Collapse labels="Sécurité"  page="about">
-          <div className="content">
-            <p>
-              La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
-              pour les voyageurs, chaque logement correspond aux critères de
-              sécurité établis par nos services. En laissant une note aussi bien
-              à l'hôte qu'au locataire, cela permet à nos équipes de vérifier
-              que les standards sont bien respectés. Nous organisons également
-              des ateliers sur la sécurité domestique pour nos hôtes.
-            </p>
+          <div className="collapse">
+            {data.map((item) => (
+              <Collapse key={item.title} labels={item.title} content={item.content} page="about"
+              ></Collapse>
+            ))}
           </div>
-          </Collapse>
-        </div>
         </section>
       </main>
       <Footer />

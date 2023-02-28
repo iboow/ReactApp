@@ -48,18 +48,16 @@ h3 {
     margin-bottom: 30px;
     border-radius: 5px;
     padding: 15px;
+    color: $primary-color;
+    font-weight: 400;
 
-    p {
-        color: $primary-color;
-        font-weight: 400;
-    }
 }
 
-.about-collapse-content p {
+.about-collapse-content  {
     font-size: $large-font-size;
 }
 
-.accomodation-collapse-content p {
+.accomodation-collapse-content  {
     font-size: $medium-font-size;
 }
 
@@ -93,7 +91,7 @@ h3 {
         
     }
 
-    .about-collapse-content p, .accomodation-collapse-content p{
+    .about-collapse-content , .accomodation-collapse-content {
         font-size: $x-small-font-size;
     }
 
